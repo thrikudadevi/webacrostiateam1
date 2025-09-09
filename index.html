@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acrostia Demo</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    body {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+    /* Banner/Carousel section */
+    .carousel-item {
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Text box on banner */
+    .carousel-caption {
+      background: rgba(255, 255, 255, 0.6); /* semi-transparent box */
+      padding: 20px 40px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+    .carousel-caption h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #4fc3f7;
+    }
+
+    .carousel-caption h1 span {
+  color: #00bcd4; /* highlight "FIRST!" in a stronger blue */
+  font-size: 3rem;
+}
+    .navbar {
+  background: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+   
+    
+    /* Services section */
+    .services-section {
+      background-color: #b64d4d; /* fixed red background */
+      color: #fff;
+      padding: 80px 0;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .services-section .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .services-section .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .services-section .icon {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    .highlight {
+  color: #912e2ecc; /* red shade */
+  font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Acrostia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Our Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Slider -->
+  <section id="home">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('images/banner.jpg');">
+          <div class="carousel-caption">
+            <h1>GOOD IDEAS comes <span>FIRST!</span></h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/banner1.jpg');">
+          <div class="carousel-caption">
+            <h1>GOOD IDEAS comes <span>FIRST!</span></h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('images/banner2.jpg');">
+          <div class="carousel-caption">
+            <h1>GOOD IDEAS comes <span>FIRST!</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container text-center">
+      <h2 class="mb-4">OUR SERVICES</h2>
+      <p class="mb-5">
+        CRAS COMMODO  MATTIS JUSTO NEC  <span class="highlight">LOBORTICS</span>. NAM UT TELLUS LOBERTICS,ULLAMCORPER MASSA SIT AMET
+Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien. Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet lacus, eget laoreet erat posuere quis.
+      </p>
+
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card p-4 h-100">
+            <div class="icon mb-3"><i class="fa fa-lightbulb"></i></div>
+            <h4>RESEARCHING</h4>
+            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-4 h-100">
+            <div class="icon mb-3"><i class="fa fa-magic"></i></div>
+            <h4>DESIGNING</h4>
+            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore..</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-4 h-100">
+            <div class="icon mb-3"><i class="fa fa-cogs"></i></div>
+            <h4>DEVELOPMENT</h4>
+            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore..</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card p-4 h-100">
+            <div class="icon mb-3"><i class="fa fa-rocket"></i></div>
+            <h4>LAUNCH</h4>
+            <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

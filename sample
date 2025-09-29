@@ -1,1 +1,250 @@
-Sample file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acrostia</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+}
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+.section {
+  padding: 60px 40px;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+}
+nav a.active, nav a:hover {
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+
+/* Work Section */
+.work-section {
+  background: #7ba34d;
+  color: white;
+  padding-top: 120px;
+}
+.filter {
+  text-align: center;
+  margin: 20px 0;
+}
+.filter button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.filter button.active {
+  background: #ffcd55;
+}
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 20px;
+}
+.item {
+  background: white;
+  color: black;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact */
+.contact-section {
+  background: #5eb5ab;
+  color: white;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+.address, .form {
+  flex: 1 1 400px;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  background: #f75c5c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+.item {
+  transition: all 0.3s ease;
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">acrostia</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work" class="active">Our Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Work Section -->
+  <section id="work" class="section work-section">
+    <h2>our work</h2>
+    <p>
+      Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
+      Curabitur posuere lectus aliquet erat rutrum sollicitudin.
+    </p>
+
+    <!-- Portfolio Filter -->
+    <div class="filter">
+      <button class="active">All</button>
+      <button>Photography</button>
+      <button>Logo Design</button>
+      <button>Web Design</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio">
+      <div class="item"><img src="One (2).png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="two2.png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Three2.png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Four.png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Five.png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Six (1).png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Seven (1).png" alt=""><p>Aenean a elit</p></div>
+      <div class="item"><img src="Eight.png" alt=""><p>Aenean a elit</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <p>
+      Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
+      Curabitur posuere lectus aliquet erat rutrum sollicitudin.
+    </p>
+
+    <div class="contact-container">
+      <!-- Address -->
+      <div class="address">
+        <h3>Address</h3>
+        <p><b>Acrostia</b><br>Sevenoaks Rd<br>Sevenoaks TN14 7HR, UK</p>
+        <p>Phone: +44 555 555 555</p>
+        <p>Fax: +44 556 555 555</p>
+        <p>Email: info@acrostia.com</p>
+        <p>Skype: Acrostia</p>
+        <iframe src="https://www.google.com/maps?q=australia&output=embed"></iframe>
+      </div>
+
+      <!-- Form -->
+      <div class="form">
+        <h3>Ask a question</h3>
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email-id" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+  // Get all filter buttons and portfolio items
+  const buttons = document.querySelectorAll('.filter button');
+  const items = document.querySelectorAll('.portfolio .item');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all buttons
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Get selected filter
+      const filter = btn.textContent.toLowerCase();
+
+      // Show/Hide portfolio items
+      items.forEach(item => {
+        if (filter === "all") {
+          item.style.display = "block";
+        } else {
+          if (item.classList.contains(filter)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
+
